@@ -41,5 +41,5 @@ int RAII::manageRes2()
 
 void RAII::throuable()
 {
-    throw std::exception("testException");
+    throw std::exception();
 }

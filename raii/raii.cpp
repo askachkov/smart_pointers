@@ -1,6 +1,7 @@
 #include "raii.h"
 #include <exception>
 #include <iostream>
+#include <string>
 
 RAII::RAII(int bufSize):
     m_Res1(new Item[bufSize])
@@ -49,5 +50,5 @@ int RAII::manageRes2()
 
 void RAII::throuable()
 {
-    throw std::exception("testException");
+    throw std::exception();
 }
