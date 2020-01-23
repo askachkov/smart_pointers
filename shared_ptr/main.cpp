@@ -45,20 +45,3 @@ int main()
     testArray();
     return 0;
 }
-
-struct BadItem: public enable_shared_from_this<BadItem>
-{
-    BadItem()
-    {
-        //bad_weak_ptr
-        cout << shared_from_this() << endl;
-    }
-    ~BadItem()
-    {
-
-        cout << shared_from_this() << endl;
-    }
-};
-
-
-
